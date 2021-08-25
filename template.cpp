@@ -1,7 +1,7 @@
-//TITLE: temp.cpp
+//TITLE: Untitled-1
 //AUTHOR: N Harsha Vardhan
-//DATE: 2021-08-24
-//TIME: 23:22:29
+//DATE: 2021-08-25
+//TIME: 10:22:27
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -18,6 +18,7 @@ typedef pair<int, int> pi;
 #define all(a) a.begin(), a.end()
 const int mod = 1e9 + 7;
 const ll INF = 1e18;
+
 int main()
 {
     /*for fastness*/
@@ -29,16 +30,4 @@ int main()
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
     */
-    int n,x;
-    cin>>n>>x;
-    if(x==1 || x==n)
-    {
-        cout<<"0\n";
-    }
-    else
-    {
-        int ind=(x-1)/2;
-        int sri=(n-x+1)/2;
-        cout<<min(ind,sri)<<"\n";
-    }
 }

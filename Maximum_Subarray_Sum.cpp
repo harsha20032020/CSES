@@ -1,7 +1,7 @@
-//TITLE: temp.cpp
+//TITLE: Maximum_Subarray_Sum.cpp
 //AUTHOR: N Harsha Vardhan
-//DATE: 2021-08-24
-//TIME: 23:22:29
+//DATE: 2021-08-25
+//TIME: 00:33:10
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -29,16 +29,22 @@ int main()
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
     */
-    int n,x;
-    cin>>n>>x;
-    if(x==1 || x==n)
+    ll n;
+    cin >> n;
+    ll a[n];
+    FOR(i, 0, n) cin >> a[i];
+    ll ma=a[0],glo=a[0];
+    FOR(i,1,n)
     {
-        cout<<"0\n";
+        ma=max(a[i],ma+a[i]);
+        if(ma>glo)
+        {
+            glo=ma;
+        }
+        if(ma<0)
+        {
+            ma=0;
+        }
     }
-    else
-    {
-        int ind=(x-1)/2;
-        int sri=(n-x+1)/2;
-        cout<<min(ind,sri)<<"\n";
-    }
+    cout<<glo<<endl;
 }
