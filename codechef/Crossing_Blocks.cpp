@@ -1,7 +1,7 @@
-//TITLE: Untitled-1
+//TITLE: Crossing_Blocks.cpp
 //AUTHOR: N Harsha Vardhan
-//DATE: 2021-08-25
-//TIME: 10:22:27
+//DATE: 2021-08-28
+//TIME: 19:53:15
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -18,16 +18,6 @@ typedef pair<int, int> pi;
 #define all(a) a.begin(), a.end()
 const int mod = 1e9 + 7;
 const ll INF = 1e18;
-
 int main()
 {
-    /*for fastness*/
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
-
-    /*if input file is given and output file needs to be generated
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-    */
-}
+    
